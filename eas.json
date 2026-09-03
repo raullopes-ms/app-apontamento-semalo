@@ -1,0 +1,33 @@
+{
+  "cli": {
+    "version": ">= 22.0.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://cloud-hom.apontamento.semalo.com.br/api/v2/apontamento"
+      }
+    },
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      },
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://cloud-hom.apontamento.semalo.com.br/api/v2/apontamento"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://cloud-hom.apontamento.semalo.com.br/api/v2/apontamento"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
